@@ -12,3 +12,6 @@ PhoneNumber varchar(10),
 Email varchar(50)
 )
 select * from Family
+truncate table Family
+delete from Family where FirstName = 'Dhanashri'
+exec dbo.ContactExists 'Dhanashri'
